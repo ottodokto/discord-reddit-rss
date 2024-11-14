@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  rss-discord-bot:
+    build: .
+    container_name: rss-discord-bot
+    env_file:
+      - .env
+    restart: unless-stopped
